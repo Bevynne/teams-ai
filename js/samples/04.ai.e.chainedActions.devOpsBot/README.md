@@ -6,18 +6,18 @@ This is a conversational bot for Microsoft Teams that demonstrates how you could
 
 <!-- code_chunk_output -->
 
--   [Microsoft Teams Conversational Bot: DevOps Bot](#microsoft-teams-conversational-bot-devops-bot)
-    -   [Prerequisites](#prerequisites)
-    -   [To try this sample](#to-try-this-sample)
-    -   [Interacting with the bot](#interacting-with-the-bot)
-    -   [Multiple ways to test](#multiple-ways-to-test)
-        -   [Using Teams Toolkit for Visual Studio Code](#using-teams-toolkit-for-visual-studio-code)
-        -   [Using Teams Toolkit CLI](#using-teams-toolkit-cli)
-        -   [Manually upload the app to a Teams desktop client](#manually-upload-the-app-to-a-teams-desktop-client)
-    -   [Testing in BotFramework Emulator](#testing-in-botFramework-emulator)
-        -   [Directions](#directions)
-    -   [Deploy the bot to Azure](#deploy-the-bot-to-azure)
-    -   [Further reading](#further-reading)
+- [Microsoft Teams Conversational Bot: DevOps Bot](#microsoft-teams-conversational-bot-devops-bot)
+  - [Prerequisites](#prerequisites)
+  - [To try this sample](#to-try-this-sample)
+  - [Interacting with the bot](#interacting-with-the-bot)
+  - [Multiple ways to test](#multiple-ways-to-test)
+    - [Using Teams Toolkit for Visual Studio Code](#using-teams-toolkit-for-visual-studio-code)
+    - [Using Teams Toolkit CLI](#using-teams-toolkit-cli)
+    - [Manually upload the app to a Teams desktop client](#manually-upload-the-app-to-a-teams-desktop-client)
+  - [Testing in BotFramework Emulator](#testing-in-botframework-emulator)
+    - [Directions](#directions)
+  - [Deploy the bot to Azure](#deploy-the-bot-to-azure)
+  - [Further reading](#further-reading)
 
 <!-- /code_chunk_output -->
 
@@ -51,7 +51,9 @@ This sample illustrates basic conversational bot behavior in Microsoft Teams. Th
 
 1. Duplicate the `sample.env` in the `teams-ai/js/samples/04.ai.e.chainedActions.devOpsBot` folder. Rename the file to `.env`.
 
-1. If you are using OpenAI then only keep the `OPENAI_KEY` and add in your key. Otherwise if you are using AzureOpenAI then only keep the `AZURE_OPENAI_KEY`, `AZURE_OPENAI_ENDPOINT` variables and fill them in appropriately.
+1. If you are using OpenAI then only keep the `OPENAI_KEY` and add in your key. Otherwise if you are using AzureOpenAI then only keep the `AZURE_OPENAI_KEY`, `AZURE_OPENAI_ENDPOINT` variables and fill them in appropriately. 
+
+> Note: The `AZURE_OPENAI_ENDPOINT` should be just the domain, ex: `https://resourceName.openai.azure.com/`
 
 1. Update `config.json` and `index.ts` with your model deployment name.
 

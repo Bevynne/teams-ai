@@ -6,14 +6,18 @@ ListBot: Your Ultimate List Management Companion. Powered by advanced AI capabil
 
 <!-- code_chunk_output -->
 
--   [AI in Microsoft Teams: List Bot](#ai-in-microsoft-teams-list-bot)
-    -   [Setting up the sample](#setting-up-the-sample)
-        -   [Using Teams Toolkit for Visual Studio Code](#using-teams-toolkit-for-visual-studio-code)
-        -   [Using Teams Toolkit CLI](#using-teams-toolkit-cli)
-        -   [Manually upload the app to a Teams desktop client](#manually-upload-the-app-to-a-teams-desktop-client)
-    -   [Interacting with the bot](#interacting-with-the-bot)
-    -   [Deploy the bot to Azure](#deploy-the-bot-to-azure)
-    -   [Further reading](#further-reading)
+- [AI in Microsoft Teams: List Bot](#ai-in-microsoft-teams-list-bot)
+      - [skprompt.txt](#skprompttxt)
+  - [Setting up the sample](#setting-up-the-sample)
+  - [Interacting with the bot](#interacting-with-the-bot)
+  - [Multiple ways to test](#multiple-ways-to-test)
+    - [Using Teams Toolkit for Visual Studio Code](#using-teams-toolkit-for-visual-studio-code)
+    - [Using Teams Toolkit CLI](#using-teams-toolkit-cli)
+    - [Manually upload the app to a Teams desktop client](#manually-upload-the-app-to-a-teams-desktop-client)
+  - [Testing in BotFramework Emulator](#testing-in-botframework-emulator)
+    - [Directions](#directions)
+  - [Deploy the bot to Azure](#deploy-the-bot-to-azure)
+  - [Further reading](#further-reading)
 
 <!-- /code_chunk_output -->
 
@@ -118,7 +122,9 @@ This sample shows how to incorporate basic conversational flow into a Teams appl
 
 3. Duplicate the `sample.env` in the `teams-ai/js/samples/04.ai.d.chainedActions.listBot` folder. Rename the file to `.env`.
 
-4. If you are using OpenAI then only keep the `OPENAI_KEY` and add in your key. Otherwise if you are using AzureOpenAI then only keep the `AZURE_OPENAI_KEY`, `AZURE_OPENAI_ENDPOINT` variables and fill them in appropriately.
+4. If you are using OpenAI then only keep the `OPENAI_KEY` and add in your key. Otherwise if you are using AzureOpenAI then only keep the `AZURE_OPENAI_KEY`, `AZURE_OPENAI_ENDPOINT` variables and fill them in appropriately. 
+
+> Note: The `AZURE_OPENAI_ENDPOINT` should be just the domain, ex: `https://resourceName.openai.azure.com/`
 
 5. Update `config.json` and `index.ts` with your model deployment name.
 
