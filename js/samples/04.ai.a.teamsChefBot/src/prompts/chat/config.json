@@ -3,7 +3,7 @@
     "description": "Chat with Teams Chef",
     "type": "completion",
     "completion": {
-        "model": "gpt-3.5-turbo",
+        "model": "avs-visualise-gpt-35-turbo",
         "completion_type": "chat",
         "include_history": true,
         "include_input": true,

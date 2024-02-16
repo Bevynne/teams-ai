@@ -82,13 +82,13 @@ if (!process.env.OPENAI_KEY && !process.env.AZURE_OPENAI_KEY) {
 
 // Create AI components
 const model = new OpenAIModel({
-    // OpenAI Support
-    apiKey: process.env.OPENAI_KEY!,
-    defaultModel: 'gpt-3.5-turbo',
+    // // OpenAI Support
+    // apiKey: process.env.OPENAI_KEY!,
+    // defaultModel: 'gpt-35-turbo',
 
     // Azure OpenAI Support
     azureApiKey: process.env.AZURE_OPENAI_KEY!,
-    azureDefaultDeployment: 'gpt-3.5-turbo',
+    azureDefaultDeployment: 'avs-visualise-gpt-35-turbo',
     azureEndpoint: process.env.AZURE_OPENAI_ENDPOINT!,
     azureApiVersion: '2023-03-15-preview',
 
